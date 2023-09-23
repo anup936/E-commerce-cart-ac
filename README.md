@@ -1,5 +1,5 @@
 
-# Cybrilla - Assignment
+# - Assignment
 
 ## Objective
 
