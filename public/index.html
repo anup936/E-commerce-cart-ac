@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/app.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h3 class="header-logo">Cybrilla Assignment : Krishanu Dey</h3>
+      </header>
+      <div class="content">
+        <div class="products"></div>
+        <div class="cart">
+          <div class="items"></div>
+          <div class="summary-row">
+            <div class="title">Item Total:</div>
+            <div class="item-total">0.00</div>
+          </div>
+          <div class="summary-row">
+            <div class="title">Cart Discount:</div>
+            <div class="cart-discount">0.00</div>
+          </div>
+          <div class="summary-row">
+            <div class="title">Grand Total:</div>
+            <div class="grand-total">0.00</div>
+          </div>
+          <div class="summary-row saving">
+            <div class="total-savings"></div>
+          </div>
+          <div class="empty-button-container">
+            <button class="empty-cart">Empty Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loader hide">
+      <div class="box">
+        <img src="img/loading.png" alt="" />
+        <div class="message">Please wait ...</div>
+      </div>
+    </div>
+    <template id="tmpl-product">
+      <div class="product">
+        <div class="name">Test</div>
+        <div class="price">100</div>
+        <button class="button">Add</button>
+      </div>
+    </template>
+
+    <template id="tmpl-cart-item">
+      <div class="cart-item">
+        <div class="name">Name</div>
+        <div class="price">Price</div>
+        <div class="quantity">Qty</div>
+        <div class="discount">Disc.</div>
+        <div class="item-total">Total</div>
+      </div>
+    </template>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

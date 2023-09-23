@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background: #eaeaea;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  overflow: hidden;
+  height: 65px;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+}
+.loader .box {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 100px);
+  height: 100px;
+  width: 200px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader .box img {
+  height: 70px;
+  width: 70px;
+  -webkit-animation: rotation 1s infinite linear;
+  animation: rotation 1s infinite linear;
+  border-radius: 50%;
+}
+.loader.hide {
+  display: none;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.content .products {
+  width: 30%;
+}
+.content .products .product {
+  display: flex;
+  align-items: center;
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 0.5em;
+  background: #ffffff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+.content .products .product .name {
+  flex: 1;
+}
+.content .products .product .button {
+  margin-left: 0.5em;
+}
+.content .cart {
+  width: 50%;
+}
+.content .cart .cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background: #ffffff;
+  border-top: 1px solid #ccc;
+}
+.content .cart .cart-item.header-row {
+  border-top: none;
+}
+
+.content .cart .cart-item > * {
+  flex: 1;
+}
+.content .cart .cart-item > *:not(.name) {
+  text-align: right;
+}
+.content .cart .summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  font-weight: bold;
+  background: #ffffff;
+  border-top: 1px solid #212121;
+}
+.content .cart .summary-row > .title {
+  flex: 1;
+}
+.content .cart .summary-row > *:not(.title) {
+  text-align: right;
+}
+.content .cart .summary-row .total-savings {
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+}
+.empty-button-container {
+  text-align: center;
+}
+.content .cart .empty-cart {
+  margin: 2em auto;
+}
