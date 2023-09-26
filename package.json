@@ -1,5 +1,5 @@
 {
-    "name": "cybrilla-ecom-cart-api",
+    "name": "ecom-cart",
     "version": "1.0.0",
     "description": "",
     "main": "build/index.js",
