@@ -16,17 +16,10 @@
         "test": "jest --coverage",
         "test:watch": "jest --watch"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/krishanudey/cybrilla-ecom-cart-api.git"
-    },
+    
     "keywords": [],
     "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/krishanudey/cybrilla-ecom-cart-api/issues"
-    },
-    "homepage": "https://github.com/krishanudey/cybrilla-ecom-cart-api#readme",
+    "license": "ISC", 
     "devDependencies": {
         "@types/body-parser": "^1.19.0",
         "@types/cors": "^2.8.6",
